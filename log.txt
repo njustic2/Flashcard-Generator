@@ -1,0 +1,12 @@
+
+{"front":"How great is DU?","back":"Increadibly great!"},
+{"front":"What is the student success rate at DU?","back":"100% success rate."},
+{"front":"How effective is their approach to education?","back":"Unique and effective!"},
+
+{"fullText":"Algorithm is a recipe which is a step by step procedure to a problem.",
+"cloze deletion":"a recipe","partialText":"Algorithm is ...."},
+{"fullText":"Coding takes a lot of practice.","clozeDeletion":"practice",
+"partialText":"Coding takes ...."},
+{"fullText":"Interval Scheduling is a Greedy Algorithm","clozeDeletion":"Greedy Algorithm","partialText":
+"Interval Scheduling is ..."},
+

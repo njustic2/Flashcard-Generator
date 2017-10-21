@@ -1,0 +1,13 @@
+
+{"fullText":"Algorithm is a recipe which is a step by step procedure to a problem.",
+"cloze deletion":"a recipe","partialText":"Algorithm is ...."},
+{"fullText":"Coding takes a lot of practice.","clozeDeletion":"practice",
+"partialText":"Coding takes ...."},
+{"fullText":"Interval Scheduling is a Greedy Algorithm","clozeDeletion":"Greedy Algorithm","partialText":
+"Interval Scheduling is ..."},
+{"fullText":"I am a graduate project management student at DU.","clozeDeletion":"student at ",
+"partialText":"I am a graduate project management... at DU"},
+{"fullText":"Serina Williams is 35 years old.","clozeDeletion":"35","partialText":"Serina Williams is ... years old."},
+{"fullText":"Her favorite Sport is Lawn Tennis.","clozeDeletion":"Lawn Tennis","partialText":"Her favorite sport is ...."},
+{"fullText":"But more precious to her is her new baby.","clozeDeletion":"Baby","partialText":
+"But what is more precious to ...."},
