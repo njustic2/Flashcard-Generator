@@ -156,9 +156,9 @@ function reviewCards() {
 			  		}]).then(function(userResponse){
 			          	
 			          	if ('"back"'+":"+'"'+userResponse.userDisplay+'"' == deckAnswerArray[reviewCount]){
-			            	console.log("YUP!");
+			            	console.log("YES!");
 			         	 } else {
-			            	console.log("NOPE! " + deckAnswerArray[reviewCount]);
+			            	console.log("NO! " + deckAnswerArray[reviewCount]);
 			         	 }
 
 			        reviewCount++;
