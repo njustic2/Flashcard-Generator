@@ -1,11 +1,30 @@
 Flashcard Generator
 
-This application uses the Terminal Window to create and review two types of flash cards.
+Overview
 
-The first type of flashcard is a basic question and answer format where the user is prompted to type out a question and then an answer. The user created flashcards are stored in a txt file.
+This application creates the backend for a basic flashcard application.The backend constitute an API that allows users to create two types of flashcards.
 
-The second style of flashcard is more complicated in that it redacts a portion of a statement for the user to guess later. In this case, the user is prompted to type in a full statement and then retype the section that they would like redacted. Like with the basic flashcard, the cards are stored in a txt for later recall.
+Basic flashcards, which have a front ("Who was the first president of the United States?"), and a back ("George Washington").
+Cloze-Deleted flashcards, which present partial text ("... was the first president of the United States."), and the full text when the user requests it ("George Washington was the first president of the United States.")
 
-When a user is reviewing previously generated flashcards. They are shown the question or statement with the redacted portion replaced with “…”. Then once they are ready, they are shown the answer or the full statement.
+
+Cloze Deletions
+
+A cloze deletion is simply a sentence that has had some of its text removed. For example, given the sentence:
+
+"George Washington was the first president of the United States."
+
+...We can create a "cloze deletion" by removing the words "George Washington":
+
+"... was the first president of the United States."
+
+This is useful for building flash card applications that forces users to remember the important part of a sentence, and is a common device in educational applications.
+
+A flash card built this way has three parts:
+
+
+The full text. This is the entire sentence users need to remember:  "George Washington was the first president of the United States."
+The cloze deletion. This is the text we've chosen to remove: "George Washington".
+The partial text. This is what we get if we remove the cloze deletion from the full text: "... was the first president of the United States.
 
 This application uses javascript, node.js, json, fileSystem, and inquirer for functionality and data storage.

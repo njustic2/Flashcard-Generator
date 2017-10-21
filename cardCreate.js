@@ -1,7 +1,7 @@
 var clozeData = require("./ClozeCard.js");
 var basicData = require("./BasicCard.js");
 var inquirer = require("inquirer");
-var fs = require('file-system');
+var fs = require('fs');
 
 var count = 0;
 var reviewCount = 0;
@@ -53,20 +53,20 @@ function cardCreation() {
 			    inquirer.prompt([
 			        {
 			        	type: "input",
-			        	name: "completeText",
+			        	name: "fullText",
 			        	message: "Enter a fact that you would like to remember."
 			        },
 			        {
 			        	type: "input",
-			        	name: "hiddenText",
+			        	name: "clozeDeletion",
 			        	message: "Re-Enter the words from the fact that you want hidden."
 			        	
 			    }]).then(function(answers) {
 
 			        var newCard = new clozeData.ClozeCard(
-			        	answers.completeText,
-			        	answers.hiddenText,
-			        	answers.partial);
+			        	answers.fullText,
+			        	answers.clozeDeletion,
+			        	answers.partialText);
 
     				fs.appendFile("clozeLog.txt", "\n" + JSON.stringify(newCard) + ",", function(err) {
 			    		if (err) {
@@ -188,14 +188,14 @@ function reviewCards() {
 			  			message: deckQuestionArray[reviewCount],
 			  		}]).then(function(userResponse){
 			          	
-			          	if ('"hiddenText"' + ":" + '"' + userResponse.userDisplay + '"' == deckAnswerArray[reviewCount]){
-			            	console.log("YUP!");
-			         	 } else {
-			            	console.log("NOPE! " + deckAnswerArray[reviewCount]);
-			         	 }
+							if ('"clozeDeletion"' + ":" + '"' + userResponse.userDisplay + '"' == deckAnswerArray[reviewCount]){
+								console.log("YES!");
+							} else {
+								console.log("NO! " + deckAnswerArray[reviewCount]);
+							}
 
-			          	reviewCount++;
-			          	reviewDeck();
+							reviewCount++;
+							reviewDeck();
 			          	}
 					});
 				});

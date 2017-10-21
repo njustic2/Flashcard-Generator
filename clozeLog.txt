@@ -1,6 +1,6 @@
 
 {"fullText":"Algorithm is a recipe which is a step by step procedure to a problem.",
-"cloze deletion":"a recipe","partialText":"Algorithm is ...."},
+"clozeDeletion":"a recipe","partialText":"Algorithm is ...."},
 {"fullText":"Coding takes a lot of practice.","clozeDeletion":"practice",
 "partialText":"Coding takes ...."},
 {"fullText":"Interval Scheduling is a Greedy Algorithm","clozeDeletion":"Greedy Algorithm","partialText":
